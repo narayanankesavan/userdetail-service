@@ -1,2 +1,2 @@
 # userdetail-service
-capstone project-backendapi-automated
+capstone project-backendapi-automated-test
