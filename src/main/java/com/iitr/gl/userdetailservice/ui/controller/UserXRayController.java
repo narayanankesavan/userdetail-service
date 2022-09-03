@@ -31,14 +31,14 @@ public class UserXRayController {
 
     @Autowired
     XRayActions xRayActions;
-    /*@GetMapping("/testRemoteMicroService")
+    @GetMapping("/testRemoteMicroService")
     public String testRemoteMicroService() {
-        loggerFactory.info("Before calling loginservice microservice");
-        String result = loginServiceClient.testRemote();
-        loginServiceClient.testRemote();
-        loggerFactory.info("After calling loginservice microservice");
-        return result;
-    }*/
+        //loggerFactory.info("Before calling loginservice microservice");
+        /*String result = loginServiceClient.testRemote();
+        loginServiceClient.testRemote();*/
+       // loggerFactory.info("After calling loginservice microservice");
+        return "userdetail sucessfully connected";
+    }
 
     @PostMapping("/download")
     public ResponseEntity<ByteArrayResource> downloadXray(@RequestBody GenericRequestModel genericRequestModel,
